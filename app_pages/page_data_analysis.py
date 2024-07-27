@@ -22,11 +22,11 @@ def page_data_analysis_body():
 
     st.write("### Data analysis")
     st.info(
-        f"* The client is interested in answering the following questions:\n"
-        f"Which months have the highest number of cancellations?\n"
-        f"What are the top 5 countries with the highest number of cancellations?\n"
-        f"Which booking channels have the highest number of cancellations?\n"
-        f"Are bookings with weekend nights stay more likely to be cancelled than those with none?\n")
+        f"* The client is interested in answering the following questions: \n"
+        f"* Which months have the highest number of cancellations? \n"
+        f"* What are the top 5 countries with the highest number of cancellations? \n"
+        f"* Which booking channels have the highest number of cancellations? \n"
+        f"* Are bookings with weekend nights stay more likely to be cancelled than those with none? \n")
 
     # Inspect data
     if st.checkbox("Inspect Dataset"):
@@ -48,13 +48,13 @@ def page_data_analysis_body():
     # Text from summary of conclusions section in data analysis notebook
     st.info(
         f"* August and July are the top 2 months with the highest number of cancellations. "
-        f"This is during the summer season.\n"
+        f"This is during the summer season. \n"
         f"* The top 5 countries with the highest number of cancellations are: "
-        f"Portugal, the Uk, France, Spain, and Italy.\n"
+        f"Portugal, the UK, France, Spain, and Italy. \n"
         f"* There are more cancellations of bookings made through TA's (Travel Agencies) "
-        f"or TO's (Tour Operators) as opposed to bookings made directly with the hotel.\n"
+        f"or TO's (Tour Operators) as opposed to bookings made directly with the hotel. \n"
         f"* Bookings without any weekend nights stay are cancelled "
-        f"more than bookings with weekend nights stay.\n"
+        f"more than bookings with weekend nights stay. \n"
     )
 
     # Code copied from data analysis notebook in conventional data analysis section
@@ -84,7 +84,7 @@ def cancellations_by_month(df_eda):
     ).size()
     sorted_months = cancellations.sort_values(ascending=False).index.tolist()
 
-    plt.figure(figsize=(12, 6))
+    fig, axes = plt.subplots(figsize=(12, 6))
     sns.countplot(
         data=df_eda,
         x='arrival_date_month',
@@ -95,7 +95,7 @@ def cancellations_by_month(df_eda):
     plt.title('Number of Cancellations per Month')
     plt.xlabel('arrival_date_month')
     plt.ylabel('count')
-    st.pyplot()
+    st.pyplot(fig)
 
 
 # Code logic from country section in data analysis notebook
@@ -106,7 +106,7 @@ def cancellations_by_country(df_eda):
     top_5_countries = cancellations_by_country.nlargest(5).index.tolist()
     df_top_5 = df_eda[df_eda['country'].isin(top_5_countries)]
 
-    plt.figure(figsize=(12, 6))
+    fig, axes = plt.subplots(figsize=(12, 6))
     sns.countplot(
         data=df_top_5,
         x='country',
@@ -117,7 +117,7 @@ def cancellations_by_country(df_eda):
     plt.xlabel('country')
     plt.ylabel('count')
     plt.xticks(rotation=90)
-    st.pyplot()
+    st.pyplot(fig)
 
 
 # Code logic from distribution channels section in data analysis notebook
@@ -129,7 +129,8 @@ def cancellations_by_dist_channel(df_eda):
     ascending=False
     ).index.tolist()
 
-    plt.figure(figsize=(12, 6))
+
+    fig, axes = plt.subplots(figsize=(12, 6))
     sns.countplot(
         data=df_eda,
         x='distribution_channel',
@@ -140,12 +141,12 @@ def cancellations_by_dist_channel(df_eda):
     plt.xlabel('distribution_channel')
     plt.ylabel('count')
     plt.xticks(rotation=90)
-    st.pyplot()
+    st.pyplot(fig)
 
 
 # Code logic from weekend nights stay section in data analysis notebook
 def cancellations_by_weekend_nights(df_eda):
-    plt.figure(figsize=(12, 6))
+    fig, axes = plt.subplots(figsize=(12, 6))
     sns.histplot(
         data=df_eda,
         x='stays_in_weekend_nights',
@@ -157,4 +158,4 @@ def cancellations_by_weekend_nights(df_eda):
     plt.xlim(0, 8)
     plt.xlabel('stays_in_weekend_nights')
     plt.ylabel('count')
-    st.pyplot()
+    st.pyplot(fig)
