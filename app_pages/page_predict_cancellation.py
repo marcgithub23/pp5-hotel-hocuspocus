@@ -9,11 +9,11 @@ def page_predict_cancellation_body():
 
     version = 'v1'
     # Load needed files
-    churn_pipe_dc_fe = load_pkl_file(
+    cancel_pipe_dc_fe = load_pkl_file(
         f'outputs/ml_pipeline/predict_cancellation/{version}/clf_pipeline_data_cleaning_feat_eng.pkl')
-    churn_pipe_model = load_pkl_file(
+    cancel_pipe_model = load_pkl_file(
         f"outputs/ml_pipeline/predict_cancellation/{version}/clf_pipeline_model.pkl")
-    churn_feat_importance = plt.imread(
+    cancel_feat_importance = plt.imread(
         f"outputs/ml_pipeline/predict_cancellation/{version}/features_importance.png")
     X_train = pd.read_csv(
         f"outputs/ml_pipeline/predict_cancellation/{version}/X_train.csv")
@@ -37,21 +37,21 @@ def page_predict_cancellation_body():
     st.write("#### There are 2 ML Pipelines arranged in series.")
 
     st.write(" * The first is responsible for data cleaning and feature engineering.")
-    st.write(churn_pipe_dc_fe)
+    st.write(cancel_pipe_dc_fe)
 
     st.write("* The second is for feature scaling and modelling.")
-    st.write(churn_pipe_model)
+    st.write(cancel_pipe_model)
 
     # Show feature importance plot
     st.write("---")
     st.write("* The features the model was trained and their importance.")
     st.write(X_train.columns.to_list())
-    st.image(churn_feat_importance)
+    st.image(cancel_feat_importance)
 
     # Evaluate performance on train and test set
     st.write("---")
     st.write("### Pipeline Performance")
     clf_performance(X_train=X_train, y_train=y_train,
                     X_test=X_test, y_test=y_test,
-                    pipeline=churn_pipe_model,
+                    pipeline=cancel_pipe_model,
                     label_map=["not cancelled", "cancelled"])
