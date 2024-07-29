@@ -1,51 +1,43 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-## Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for the bring your own data project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into your cloud IDE with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and `pip3 install -r requirements.txt`
-
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
-
-1. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace, so it will be Python-3.8.18 as installed by our template. To confirm this, you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
+* The dataset is from [Kaggle](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand/data).
+* A fictitious business scenario was created based on the dataset to conduct conventional data analysis and develop an ML predictive model to meet business requirements.
+* This dataset contains booking information for a city hotel and a resort hotel, and includes information such as when the booking was made, length of stay, the number of adults, children, and/or babies, and the number of available parking spaces, among other things. All personally identifying information has been removed from the data.
+* The dataset from Kaggle originally contains 100k+ entries, but in this project the dataset has been scaled down to 8k entries to minimise the size of the model pipeline for pushing to repo. It contains the following 32 variables:
+
+| __No.__ | __Variable__ | __Description__ | __Units__ |
+|   :---    |     :---     |       :---      |       :---      |
+| 1 | __hotel__ | Type of hotel | Resort Hotel, City Hotel |
+| 2 | __is_canceled__ | Reservation cancellation status |  0 = not cancelled, 1 = cancelled |
+| 3 | __lead_time__ | Number of days between booking and arrival | 0-629 days |
+| 4 | __arrival_date_year__ | Year of arrival | 2015-2017 |
+| 5 | __arrival_date_month__ | Month of arrival | January-December |
+| 6 | __arrival_date_week_number__ | Week number of the year for arrival | 1-53 |
+| 7 | __arrival_date_day_of_month__ | Day of the month of arrival | 1-31 |
+| 8 | __stays_in_weekend_nights__ | Number of weekend nights (Saturday and Sunday) the guest stayed or booked | 0-16 |
+| 9 | __stays_in_week_nights__ | Number of week nights the guest stayed or booked | 0-40 |
+| 10 | __adults__ | Number of adults | 0-27 |
+| 11 | __children__ | Number of children | 0-3 |
+| 12 | __babies__ | Number of babies | 0-2 |
+| 13 | __meal__ | Type of meal booked | BB, FB, HB, SC, Undefined |
+| 14 | __country__ | Country of origin of the guest | Countries |
+| 15 | __market_segment__ | Market segment designation | Offline TA/TO, Online TA, Groups, Direct, Corporate, Complementary, Aviation |
+| 16 | __distribution_channel__ | Booking distribution channel | TA/TO, Direct, Corporate, GDS |
+| 17 | __is_repeated_guest__ | If the guest is a repeat customer | 0 = not repeated, 1 = repeated |
+| 18 | __previous_cancellations__ | Number of previous bookings that were canceled by the customer | 0-26
+| 19 | __previous_bookings_not_canceled__ | Number of previous bookings that were not canceled by the customer | 0-57 |
+| 20 | __reserved_room_type__ | Type of reserved room | A, D, E, G, F, B, P, C, H, L |
+| 21 | __assigned_room_type__ | Type of assigned room | 'A', 'D', 'E', 'C', 'G', 'B', 'K', 'F', 'P', 'H', 'I' |
+| 22 | __booking_changes__ | Number of changes made to the booking | 0-14 |
+| 23 | __deposit_type__ | Type of deposit made | No Deposit, Refundable, Non Refund |
+| 24 | __agent__ | ID of the travel agent responsible for the booking | 1-531 |
+| 25 | __company__ | ID of the company responsible for the booking | 9-534 |
+| 26 | __days_in_waiting_list__ | Number of days the booking was in the waiting list | 0-391 |
+| 27 | __customer_type__ | Type of customer | Transient, Contract, Transient-Party, Group |
+| 28 | __adr__ | Average Daily Rate | 0-392 |
+| 29 | __required_car_parking_spaces__ | Number of car parking spaces required | 0-2 |
+| 30 | __total_of_special_requests__ | Number of special requests made | 0-5 |
+| 31 | __reservation_status__ | Last reservation status | Check-Out, Canceled, No-Show |
+| 32 | __reservation_status_date__ | Date of the last reservation status | Dates |
 
 
 ## Business Requirements
