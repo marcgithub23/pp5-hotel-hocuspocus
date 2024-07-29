@@ -90,10 +90,53 @@ The client wishes to come up with operational planning for minimising cancellati
     * Train data - target: is_canceled; features: all other variables, except the ones listed above.
 
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
+## Dashboard Design (Streamlit App User Interface)
 
+### Page 1: Quick Project Summary
+* Quick project summary
+    * Project Terms & Jargon
+    * Describe Project Dataset
+    * State Business Requirements
+![Screenshot of quick project summary page](/documentation/quick_project_summary.png)
+
+### Page 2: Data Analysis
+* List the questions from the client as per business requirement 1
+* Checkbox: data inspection (display the number of rows and columns in the data, and display the first ten rows of the data)
+* Display the answers to the questions as bulleted list.
+* Checkboxes to show each plot that provides the answers to the questions.
+![Screenshot of data analysis page](/documentation/data_analysis1.png)
+![Screenshot of data analysis page](/documentation/data_analysis2.png)
+![Screenshot of data analysis page](/documentation/data_analysis3.png)
+![Screenshot of data analysis page](/documentation/data_analysis4.png)
+![Screenshot of data analysis page](/documentation/data_analysis5.png)
+![Screenshot of data analysis page](/documentation/data_analysis6.png)
+![Screenshot of data analysis page](/documentation/data_analysis7.png)
+
+### Page 3: Predict Cancellation
+* State business requirement 2
+* Set of widgets inputs, which relates to a customer's booking, to predict cancellation.
+* "Run predictive analysis" button that serves the booking data to the ML pipelines and predicts if the customer will cancel their booking or not.
+![Screenshot of predict cancellation page](/documentation/predict_cancellation.png)
+
+### Page 4: Project Hypothesis and Validation
+* Before the analysis, we knew we wanted this page to describe each project hypothesis, the conclusions, and how we validated each. After the data analysis, we can report that:
+    * We suspect majority of booking cancellations are in the summer season.
+        * Correct. Data analysis shows that August and July are the top 2 highest cancellation by month. This is during the summer season.
+    * We suspect that there are more cancellations for bookings made through distribution partners than direct bookings.
+        * Correct. The data analysis conducted supports this hypothesis.
+    * We suspect that bookings with weekend nights stay are more likely to be cancelled than those with none.
+        * False. Data analysis shows that bookings without any weekend nights stay are cancelled more than bookings with weekend nights stay.
+![Screenshot of project hypothesis and validation page](/documentation/hypothesis_validation.png)
+
+### Page 5: ML: Predict Cancellation
+* Considerations and conclusions after the pipeline is trained
+* Present ML pipeline steps
+* Feature importance
+* Pipeline performance
+![Screenshot of ML predict page](/documentation/ml_predict1.png)
+![Screenshot of ML predict page](/documentation/ml_predict2.png)
+![Screenshot of ML predict page](/documentation/ml_predict3.png)
+![Screenshot of ML predict page](/documentation/ml_predict4.png)
 
 
 ## Unfixed Bugs
