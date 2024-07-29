@@ -57,7 +57,12 @@ The client wishes to come up with operational planning for minimising cancellati
 
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
+* **Business Requirement 1:** Conventional Data Analysis and Visualization
+    * We will conduct conventional data analysis on the following variables: arrival_date_month, country, distribution_channel, and stays_in_weekend_nights to answer the questions from stakeholders.
+    * We will plot the above variables against is_canceled to visualise insights.
+
+* **Business Requirement 2:** Classification for Predicting Cancellation
+    * We want to predict if a customer will cancel their booking or not. We want to build a binary classifier.
 
 
 ## ML Business Case
