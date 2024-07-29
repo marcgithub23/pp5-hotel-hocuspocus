@@ -41,8 +41,11 @@
 
 
 ## Business Requirements
-* Describe your business requirements
+The client wishes to come up with operational planning for minimising cancellations, improving room occupancy, and maximising revenue based on data-driven insights. After discussion with the stakeholders, the following two business requirements were agreed upon:
 
+* Conducting conventional data analysis, the client is interested in answering the following questions: Which months have the highest number of cancellations? What are the top 5 countries with the highest number of cancellations? Which booking channels have the highest number of cancellations? Are bookings with weekend nights stay more likely to be cancelled than those with none?
+
+* The client is interested in determining whether or not a given booking will be cancelled.
 
 ## Hypothesis and how to validate?
 * List here your project hypothesis(es) and how you envision validating it (them) 
