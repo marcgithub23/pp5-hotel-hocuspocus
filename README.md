@@ -15,6 +15,7 @@ Link to the completed and closed tasks/issues.
 Link to the uncompleted and open tasks/issues in the backlog, which will be implemented as future features.
 ![Screenshot of kanban board](/documentation/agile3.png)
 
+
 ## Dataset Content
 * The dataset is from [Kaggle](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand/data).
 * A fictitious business scenario was created based on the dataset to conduct conventional data analysis and develop an ML predictive model to meet business requirements.
@@ -154,6 +155,10 @@ The client wishes to come up with operational planning for minimising cancellati
 ![Screenshot of ML predict page](/documentation/ml_predict2.png)
 ![Screenshot of ML predict page](/documentation/ml_predict3.png)
 ![Screenshot of ML predict page](/documentation/ml_predict4.png)
+
+
+## Manual Testing
+* Please refer to the [TESTING.md](/TESTING.md) file for all test-related documentation.
 
 
 ## Unfixed Bugs
