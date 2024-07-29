@@ -158,7 +158,16 @@ The client wishes to come up with operational planning for minimising cancellati
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* Jupyter: used for its interactive web application for creating the necessary notebooks to write the code for the ML project.
+* Streamlit: used to create the dashboard to put their code into a web application.
+* Numpy: is a Python library used for working with arrays, for example return an array of zeros with the same shape and type as a given array.
+* Pandas: used for working with data sets, for example read a comma-separated values (csv) file into DataFrame.
+* Matplotlib, Seaborn, and Plotly: used for visualization of the data by generating different type of plots.
+* Pandas Profiling: used to create a comprehensive Report of the dataset to help with Exploratory Data Analysis (EDA).
+* ppscore: used to determine the predictive power score between two columns.
+* feature-engine: used to engineer the dataset’s variables and select features for use in the machine learning model.
+* scikit-learn: is a Python library for machine learning used for example split randomly the train and test sets.
+* imbalanced-learn: used for handling target imbalance, e.g. SMOTE.
 
 
 ## Credits 
