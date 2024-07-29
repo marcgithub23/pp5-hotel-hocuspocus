@@ -140,7 +140,7 @@ The client wishes to come up with operational planning for minimising cancellati
 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+* There were no known unfixed bugs in this project.
 
 ## Deployment
 ### Heroku
