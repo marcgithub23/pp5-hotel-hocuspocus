@@ -48,7 +48,12 @@ The client wishes to come up with operational planning for minimising cancellati
 * The client is interested in determining whether or not a given booking will be cancelled.
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* We suspect majority of booking cancellations are in the summer season.
+    * Plot a countplot of the number of cancellations per month in descending order.
+* We suspect that there are more cancellations for bookings made through distribution partners than direct bookings.
+    * Plot a countplot of the number of cancellations by distribution channel in descending order.
+* We suspect that bookings with weekend nights stay are more likely to be cancelled than those with none.
+    * Plot a histogram of the distribution of stays in weekend nights.
 
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
