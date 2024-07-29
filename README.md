@@ -170,24 +170,19 @@ The client wishes to come up with operational planning for minimising cancellati
 * imbalanced-learn: used for handling target imbalance, e.g. SMOTE.
 
 
-## Credits 
+## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+### Content
 
-### Content 
+* The dataset is from [Kaggle](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand/data).
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+### Coding
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
+* This project was based on Code Institute's Churnometer walkthrough project.
+* This [Kaggle notebook](https://www.kaggle.com/code/farzadnekouei/hotel-booking-cancellation-prediction/notebook) by [Farzad Nekouei](https://www.kaggle.com/farzadnekouei) was also consulted for ideas.
+* This [Kaggle notebook](https://www.kaggle.com/code/niteshyadav3103/hotel-booking-prediction-99-5-acc) by [Nitesh Yadav](https://www.kaggle.com/niteshyadav3103) was also consulted for ideas.
 
 
 ## Acknowledgements (optional)
-* Thank the people that provided support through this project.
+* I would like to thank my mentor, Rohit Sharma, for his tips and support in completing this project.
 
