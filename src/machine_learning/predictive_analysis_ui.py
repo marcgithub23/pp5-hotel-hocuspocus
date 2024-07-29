@@ -24,7 +24,10 @@ def predict_cancellation(X_live, cancel_features, cancel_pipeline_dc_fe, cancel_
 
     statement = (
         f'### There is {cancel_prob.round(1)}% probability '
-        f'that this customer **{cancel_result} cancel their booking**.')
+        f'that this customer **{cancel_result} cancel their booking**. \n'
+        f"Please note that the current model is overfitting, but future improvements "
+        f"will be made to fine tune the model performance. "
+    )
 
     st.write(statement)
 
