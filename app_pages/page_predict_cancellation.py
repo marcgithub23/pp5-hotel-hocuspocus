@@ -29,7 +29,10 @@ def page_predict_cancellation_body():
     st.info(
         f"* The pipeline was tuned aiming at least 0.80 Recall on 'cancelled' class, "
         f"since in this project we are interested in detecting a potential cancellation. \n"
-        f"* The pipeline performance on train and test set is 0.87 and 0.66, respectively."
+        f"* The pipeline performance on train and test set is 0.87 and 0.66, respectively. \n"
+        f"* The above performance means that the model is overfitting as there "
+        f"is a considerable difference. Future improvements will be made "
+        f"to fine tune model performance."
     )
 
     # Show pipelines
