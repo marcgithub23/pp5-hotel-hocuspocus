@@ -3,6 +3,18 @@
 * The link to the deployed dashboard is: [PP5 Hotel Hocuspocus](https://pp5-hotel-hocuspocus-10951e8f369c.herokuapp.com/)
 
 
+## Agile methodology
+GitHub Project Management was used to manage this project via its kanban board feature.
+
+Link to the [kanban board](https://github.com/users/marcgithub23/projects/3)
+![Screenshot of kanban board](/documentation/agile1.png)
+
+Link to the completed and closed tasks/issues.
+![Screenshot of kanban board](/documentation/agile2.png)
+
+Link to the uncompleted and open tasks/issues in the backlog, which will be implemented as future features.
+![Screenshot of kanban board](/documentation/agile3.png)
+
 ## Dataset Content
 * The dataset is from [Kaggle](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand/data).
 * A fictitious business scenario was created based on the dataset to conduct conventional data analysis and develop an ML predictive model to meet business requirements.
@@ -188,5 +200,5 @@ The client wishes to come up with operational planning for minimising cancellati
 * This [Kaggle notebook](https://www.kaggle.com/code/niteshyadav3103/hotel-booking-prediction-99-5-acc) by [Nitesh Yadav](https://www.kaggle.com/niteshyadav3103) was also consulted for ideas.
 
 
-## Acknowledgements (optional)
+## Acknowledgements
 * I would like to thank my mentor, Rohit Sharma, for his tips and support in completing this project.
