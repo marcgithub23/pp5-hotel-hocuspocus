@@ -1,3 +1,8 @@
+## About Project
+* This project aims to build a predictive model to implement as a tool via a dashboard to predict whether a customer will cancel their booking or not.
+* The link to the deployed dashboard is: [PP5 Hotel Hocuspocus](https://pp5-hotel-hocuspocus-10951e8f369c.herokuapp.com/)
+
+
 ## Dataset Content
 * The dataset is from [Kaggle](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand/data).
 * A fictitious business scenario was created based on the dataset to conduct conventional data analysis and develop an ML predictive model to meet business requirements.
@@ -185,4 +190,3 @@ The client wishes to come up with operational planning for minimising cancellati
 
 ## Acknowledgements (optional)
 * I would like to thank my mentor, Rohit Sharma, for his tips and support in completing this project.
-
