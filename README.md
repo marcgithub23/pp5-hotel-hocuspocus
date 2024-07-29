@@ -66,7 +66,28 @@ The client wishes to come up with operational planning for minimising cancellati
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
+
+### Predict Cancellation
+
+#### Classification Model
+
+* We want an ML model to predict if a customer will cancel their booking or not based on historical data, which doesn't include the following variables:
+    * company (irrelevant as it's the company's ID number)
+    * agent (irrelevant as it's the agent's ID number)
+    * country (high cardinality and might affect fitting of model)
+    * arrival_date_year (model must be able to generalise future bookings)
+    * reservation_status (directly related to is_cancel and might cause data leakage)
+    * reservation_status_date (same reason as above)
+    * assigned_room_type (same reason as above; only set in the system when guests actually check-in)
+* The target variable is categorical and contains 2-classes. We consider a classification model. It is a supervised model, a 2-class, single-label, classification model output: 0 (not cancelled), 1 (cancelled)
+* Our ideal outcome is to provide the client's operational planning team with reliable insight into minimising cancellations, improving room occupancy, and thus maximising revenue.
+* The model success metrics are:
+    * At least 80% Recall for cancellation on train and test sets
+    * Version 1 of the predictive model achieves 87% Recall for cancellation on the train set, but only 66% on the test set. This suggests that the model has overfitted as there is a considerable difference.
+    * Stakehoders are made aware of this performance and future improvements, such as further extensive hyperparameters optimisation or collection of new variable to add to the dataset, will be made to fine tune the model's performance.
+* Heuristics: Currently, there is no approach to predict cancellations.
+* The training data to fit the model comes from Kaggle. This dataset contains about 100k+ entries, but in this project the dataset has been scaled down to 8k entries to minimise the size of the model pipeline.
+    * Train data - target: is_canceled; features: all other variables, except the ones listed above.
 
 
 ## Dashboard Design
