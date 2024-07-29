@@ -9,10 +9,10 @@ GitHub Project Management was used to manage this project via its kanban board f
 Link to the [kanban board](https://github.com/users/marcgithub23/projects/3)
 ![Screenshot of kanban board](/documentation/agile1.png)
 
-Link to the completed and closed tasks/issues.
+[Link](https://github.com/marcgithub23/pp5-hotel-hocuspocus/issues?q=is%3Aissue+is%3Aclosed) to the completed and closed tasks/issues.
 ![Screenshot of kanban board](/documentation/agile2.png)
 
-Link to the uncompleted and open tasks/issues in the backlog, which will be implemented as future features.
+[Link](https://github.com/marcgithub23/pp5-hotel-hocuspocus/issues?q=is%3Aopen+is%3Aissue) to the uncompleted and open tasks/issues in the backlog, which will be implemented as future features.
 ![Screenshot of kanban board](/documentation/agile3.png)
 
 
