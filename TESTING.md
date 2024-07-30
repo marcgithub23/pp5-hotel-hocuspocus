@@ -14,11 +14,13 @@ Usability was tested with the below user acceptance testing.
 | Data Analysis Page    |                        |                  |      |             |
 | 1           | Click on radio button | Bring up data analysis page | Y |   Radio button located on the left navigation bar  |
 | 2           | Already on page | See business requirement 1 questions and summary of conclusions | Y |  n/a  |
-| 3           | Click on each checkbox | Shows corresponding plots for each variable | Y |  n/a  |
+| 3           | Click on Inspect Dataset | See 32 columns and the first 10 rows of dataset | Y |  n/a  |
+| 4           | Click on each checkbox | Shows corresponding plots for each variable | Y |  n/a  |
 | Predict Cancellation Page    |                        |                  |      |             |
 | 1           | Click on radio button | Bring up predict cancellation page | Y |   Radio button located on the left navigation bar  |
 | 2           | Interact with widgets | Show dropbox for options, increase or decrease numbers, or manually enter input | Y |   n/a  |
-| 3           | Click on "Run Predictive Analysis" button | Shows statement whether a customer will cancel or not with probability | Y |   n/a  |
+| 3           | Hover on tooltip question mark symbol | Show description of each widget | Y |   n/a  |
+| 4           | Click on "Run Predictive Analysis" button | Shows statement whether a customer will cancel or not with probability | Y |   n/a  |
 | Hypothesis and Validation Page     |                        |                  |      |             |
 | 1           | Click on radio button | Bring up hypothesis and validation page | Y |   Radio button located on the left navigation bar   |
 | ML: Predict Cancellation Page     |                        |                  |      |             |
