@@ -3,17 +3,45 @@
 * The link to the deployed dashboard is: [PP5 Hotel Hocuspocus](https://pp5-hotel-hocuspocus-10951e8f369c.herokuapp.com/)
 
 
-## Agile methodology
-GitHub Project Management was used to manage this project via its kanban board feature.
+## Agile Methodology
+* GitHub Project Management was used to manage this project via its kanban board feature.
 
-Link to the [kanban board](https://github.com/users/marcgithub23/projects/3)
+* Link to the [kanban board](https://github.com/users/marcgithub23/projects/3)
 ![Screenshot of kanban board](/documentation/agile1.png)
 
-[Link](https://github.com/marcgithub23/pp5-hotel-hocuspocus/issues?q=is%3Aissue+is%3Aclosed) to the completed and closed tasks/issues.
+* [Link](https://github.com/marcgithub23/pp5-hotel-hocuspocus/issues?q=is%3Aissue+is%3Aclosed) to the completed and closed tasks/issues.
 ![Screenshot of kanban board](/documentation/agile2.png)
 
-[Link](https://github.com/marcgithub23/pp5-hotel-hocuspocus/issues?q=is%3Aopen+is%3Aissue) to the uncompleted and open tasks/issues in the backlog, which will be implemented as future features.
+* [Link](https://github.com/marcgithub23/pp5-hotel-hocuspocus/issues?q=is%3Aopen+is%3Aissue) to the uncompleted and open tasks/issues in the backlog, which will be implemented as future features.
 ![Screenshot of kanban board](/documentation/agile3.png)
+
+
+## CRISP-DM Workflow
+* In addition to Agile methodology, the Cross Industry Standard Process for Data Mining (CRISP-DM) guidelines were observed to help with the workflow of this project. The workflow has the following six stages:
+    1. Business understanding
+    2. Data understanding
+    3. Data preparation
+    4. Modelling
+    5. Evaluation
+    6. Deployment
+
+### Business understanding
+* Determine business requirements through extensive discussions with the client.
+
+### Data understanding
+* Identify, collect, and analyse the dataset that can accomplish the business requirements.
+
+### Data preparation
+* Prepare the data for modelling through cleaning and feature engineering.
+
+### Modelling
+* Build and assess various models based on several different modelling techniques and hyperparameters optimisation.
+
+### Evaluation
+* Evaluate which model best meets the business and what to do next whether to proceed to deployment or iterate further.
+
+### Deployment
+* Develop a web application using Streamlit, taking into account business requirements and principles for good user experience. The app is deployed through Heroku cloud hosting service.
 
 
 ## Dataset Content
